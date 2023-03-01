@@ -2,24 +2,88 @@
 <html lang="en">
 <head>
     <title>latihan Layout</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <article>
-        <header>
-            <h1>Judul Artikel</h1>
-            <p>Selamat Datang</p>
-        </header>
+        
         <nav class="container">
-            <div class="home">Home</div>
-            <div class="search">Search</div>
-            <div class="logout">Logout</div>
-        </nav>    
-        <main>
-            <p>Ini konten utama, blablablablablab, blablablabla.</p>
-            <p>ini konten kedua.</p>
+            <img src="halal-seeklogo.com-1.svg" alt="Logo halal" class="logo" width="45px">
+            <div class="home"><a href="xxx">Home</a></div>
+            <div class="myProfile"><a href="xxx">My Profile</a></div>
+            <div class="portofolio"><a href="xxx">Portofolio</a></div>
+            <div class="messageUs"><a href="xxx">Message Us</a></div>
+
+        </nav>  
+        <header>
+            <h1>Form Belajar</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </header>  
+        <main class="conten">
+            <div class="form">
+                <form action="GET">
+                    <div>
+                        <label for="name">Nama :</label>
+                        <input id="name" type="text" name="nama">
+                    </div>
+                    <div>
+                        <label for="tanggallahir">Tanggal Lahir :</label>
+                        <input id="tanggallahir" type="date" name="tanggallahir" >
+                    </div>
+                    <div>
+                        <label for="jeniskelamin">Jenis Kelamin :</label>
+                        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                        <label for="Laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                        <label for="Perempuan">Perempuan</label>
+                    </div>
+                    <div>
+                        <label for="pesan">Pesan :</label>
+                        <textarea name="pesan" id="pesan" cols="30" rows="10">Ketik pesan mu...</textarea>
+                    </div>
+                    <div><input type="submit" value="submit"></div>
+                </form>
+            </div>
+            <div class="tableUser">
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profil</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>Anissa Ayu</td>
+                        <td>Februari, 20, 2002</td>
+                        <td>Perempuan</td>
+                        <td>Gua cantik kan?</td>
+                        <td><a href="xxxx">Klik Disini</a></td>
+                        <td><i class="fa fa-trash-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Byeol</td>
+                        <td>Maret, 10, 2005</td>
+                        <td>Perempuan</td>
+                        <td>Mama, bukan mama byeol?</td>
+                        <td><a href="xxxx">Klik Disini</a></td>
+                        <td><i class="fa fa-trash-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Sonni megumi</td>
+                        <td>November, 5, 2001</td>
+                        <td>Laki-laki</td>
+                        <td>Gua pengen kaya</td>
+                        <td><a href="xxxx">Klik Disini</a></td>
+                        <td><i class="fa fa-trash-o"></i></td>
+                    </tr>
+                </table>
+            </div>
         </main>
-        <footer>
-            <p>Finish</p>
+        <footer class="footer">
+            <p>RevoU</p>
         </footer>
     </article>
     
