@@ -34,7 +34,7 @@
 }
 
 .conten div {
-    display: flex;
+    
     flex: 1;
     align-content: center;
     justify-content: center;
@@ -42,14 +42,37 @@
     padding-right: 10px;
 }
 
-.form {
+
+.form div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.formisian {
     flex-direction: column;
     display: flex;
 }
 
-#name, #tanggallahir, #laki, #pesan{
-    margin-left: auto;
+.formisian > div {
+    display: flex;
+
 }
+.nama {
+    flex-direction: row;
+    
+}
+
+.jenis {
+    flex-direction: row;
+    
+    
+}
+.jenis div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 table {
     text-align: center;
@@ -69,4 +92,8 @@ tr td {
     text-align: right;
     background-color: antiquewhite;
     padding: 10px;
+}
+
+div {
+    display: block;
 }
