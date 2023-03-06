@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan Layout</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="navbar">
+                <img src="halal-seeklogo.com-1.svg" alt="Logo halal" class="logo" width="45px">
+                <div class="nav-menu">
+                    <div class="menu-item"><a href="xxx">Home</a></div>
+                    <div class="menu-item"><a href="xxx">My Profile</a></div>
+                    <div class="menu-item"><a href="xxx">Portofolio</a></div>
+                    <div class="menu-item"><a href="xxx">Message Us</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <!-- Ini bagian hero -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-title">
+                    <h1>Form Belajar</h1>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+            </div>
+        </section>
+        <!-- Ini bagian data -->
+        <section id="data">
+            <div class="container">
+                <div class="data">
+                    <!-- Ini form -->
+                    <div class="data-form">
+                        <form action="" method="get">
+                            <div class="form-label">
+                                <div class="label-data">
+                                    <label for="name">Nama :</label>
+                                    <label for="tanggallahir">Tanggal Lahir :</label>
+                                    <label for="jeniskelamin">Jenis Kelamin :</label>
+                                    <label for="pesan">Pesan :</label>
+                                    
+                                </div>
+                                <div class="label-isi">
+                                    <input id="name" type="text" name="nama">
+                                    <input id="tanggallahir" type="date" name="tanggallahir">
+                                    <div class="jk">
+                                        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                                        <label for="Laki-laki">Laki-laki</label>
+                                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                        <label for="Perempuan">Perempuan</label>
+                                    </div> 
+                                    <textarea name="pesan" id="pesan" cols="28" rows="5">Ketik pesan mu...</textarea>
+                                </div>
+                            </div>
+                            <div class="button"><input type="submit" value="submit"></div>                          
+                        </form>
+                    </div>
+                    <!-- Ini data tabel-->
+                    <div class="data-tabel">
+                        <div class="tabel-profile">
+                            <p>Your Profile</p>
+                        </div>
+                        <div class="tabel-formout">
+                            <div class="formout-label">
+                                <p>Nama : </p>
+                                <p>Tanggal Lahir : </p>
+                                <p>Jenis Kelamin : </p>
+                                <p>Pesan : </p>
+                            </div>
+                            <div class="formout-data">
+                                <span id="sender-full-name">eunha</span>
+                                <span id="sender-birth-date">af</span>
+                                <span id="sender-gender">faf</span>
+                                <span id="sender-pesan">afe</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
