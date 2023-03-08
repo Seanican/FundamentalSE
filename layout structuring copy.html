@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan Layout copy</title>
+    <link rel="stylesheet" href="style2 copy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="navbar">
+                <img src="halal-seeklogo.com-1.svg" alt="Logo halal" class="logo" width="45px">
+                <div class="nav-menu">
+                    <div class="menu-item"><a href="xxx">Home</a></div>
+                    <div class="menu-item"><a href="xxx">My Profile</a></div>
+                    <div class="menu-item"><a href="xxx">Portofolio</a></div>
+                    <div class="menu-item"><a href="xxx">Message Us</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <!-- Ini bagian hero -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-title">
+                    <h1>Form Belajar</h1>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+            </div>
+        </section>
+        <!-- Ini bagian data -->
+        <section id="data">
+            <div class="container">
+                <div class="data">
+                    <!-- Ini form -->
+                    <div class="data-form">
+                        <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                            <div class="form-label">
+                                <div class="label-data">
+                                    <label for="name">Nama :</label>
+                                    <label for="birth-date">Tanggal Lahir :</label>
+                                    <label for="gender">Jenis Kelamin :</label>
+                                    <label for="messages">messages :</label>
+                                    
+                                </div>
+                                <div class="label-isi">
+                                    <input placeholder="Nama" type="text" name="full-name">
+                                    <input type="date" name="birth-date">
+                                    <div class="jk">
+                                        <input type="radio" id="Laki-laki" name="gender" value="Laki-laki">
+                                        <label for="Laki-laki">Laki-laki</label>
+                                        <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                                        <label for="Perempuan">Perempuan</label>
+                                    </div> 
+                                    <textarea placeholder="Pesan Mu..." name="messages" id="pesan" cols="28" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="button"><input type="submit" value="submit"></div>                          
+                        </form>
+
+                        <script>
+                            function validateForm() {
+                                /*Mengambil Data*/
+                                var name = document.forms ["message-form"] ["full-name"].value;
+                                var date = document.forms ["message-form"] ["birth-date"].value;
+                                var gender = document.forms ["message-form"] ["gender"].value;
+                                var messages = document.forms ["message-form"] ["messages"].value;
+                                
+                                /*Validasi Form*/
+                                if( name == "" || date == "" || gender == "" || messages == "") {
+                                    alert ("Input tidak boleh kosong");
+                                    return false;
+                                } 
+                               /*Menampilkan Data*/
+                                document.getElementById("sender-full-name").innerText = name;
+                                document.getElementById("sender-birth-date").innerText = date;
+                                document.getElementById("sender-gender").innerText = gender;
+                                document.getElementById("sender-messages").innerText = messages;
+                                console.log({ name, date, gender,messages });
+                                return false;
+                            }
+                        </script>
+                    </div>
+                    <!-- Ini data tabel-->
+                    <div class="data-tabel">
+                        <div class="tabel-profile">
+                            <p>Your Profile</p>
+                        </div>
+                        <div class="tabel-formout">
+                            <div class="formout-label">
+                                <p>Nama : </p>
+                                <p>Tanggal Lahir : </p>
+                                <p>Jenis Kelamin : </p>
+                                <p>Pesan : </p>
+                            </div>
+                            <div class="formout-data">
+                                <span id="sender-full-name"></span>
+                                <span id="sender-birth-date"></span>
+                                <span id="sender-gender"></span>
+                                <span id="sender-messages"></span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
